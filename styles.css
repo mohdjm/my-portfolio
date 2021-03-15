@@ -1,0 +1,145 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Amatic+SC:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.0rem; /* 10px */
+  line-height: 1.0;
+  color: ;
+}
+
+a {
+  text-decoration: none;
+  color: #cccac9;
+}
+
+h1  {
+  font-family: 'Rubik', sans-serif;
+  font-size: 6rem;
+}
+
+h2  {
+  font-family: 'Alegreya SC', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+h3   {
+  font-size: 1.2rem;
+}
+
+p{
+  font-size: 1.2rem;
+}
+#navbar {
+  position: fixed;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: red;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+ul  {
+  list-style:  none;
+  }
+
+.nav-link {
+  padding: 20px;
+  display: block;
+  font-size: 2.2rem;
+  }
+
+
+
+#welcome-section {
+  display: flex;
+  background-image: linear-gradient(156deg, #e3cfc1 12%, #484280 100%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  }
+.welcome  {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background-image: linear-gradient(156deg, #f2afac 12%, #5f97f0 100%);
+}
+
+.projects-header   {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2 rem solid white;
+}
+.projects-grid  {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
